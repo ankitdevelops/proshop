@@ -12,7 +12,7 @@ const ProductScreen = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const { data } = await axios.get(`/api/product/${productID}`);
+      const { data } = await axios.get(`/api/products/${productID}`);
       setProduct(data);
     };
     fetchProducts();
